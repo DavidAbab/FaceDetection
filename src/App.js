@@ -90,6 +90,8 @@ class App extends React.Component {
     })
       .then((response) => response.json())
       .then((response) => {
+        console.log("response:", response);
+
         if (response) {
           fetch("https://radiant-chamber-36629.herokuapp.com/image", {
             method: "put",
